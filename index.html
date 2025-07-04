@@ -3,807 +3,1146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPECIAL BUNDLE 2PCS - Hijab Segi Empat Polycotton Premium</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>ALAT PENGHANCUR OBAT 4IN1 - Flashsale.healty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        :root {
+            --primary: #2a9d8f;
+            --secondary: #264653;
+            --accent: #e9c46a;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --danger: #e76f51;
+        }
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
+        
         body {
-            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: var(--dark);
             line-height: 1.6;
-            color: #333;
-            overflow-x: hidden;
         }
-
+        
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 15px;
         }
-
-        /* Header Section */
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        
+        /* Header */
+        header {
+            background-color: var(--secondary);
             color: white;
-            padding: 80px 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .header::before {
-            content: '';
-            position: absolute;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
             top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-            animation: float 20s ease-in-out infinite;
+            z-index: 100;
         }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-        }
-
+        
         .header-content {
-            position: relative;
-            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-
-        .badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.2);
-            padding: 8px 20px;
-            border-radius: 50px;
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--accent);
+        }
+        
+        .sale-tag {
+            background-color: var(--danger);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
             animation: pulse 2s infinite;
         }
-
+        
         @keyframes pulse {
             0% { transform: scale(1); }
             50% { transform: scale(1.05); }
             100% { transform: scale(1); }
         }
-
-        .main-title {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            background: linear-gradient(45deg, #fff, #f0f0f0);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: slideInUp 1s ease-out;
-        }
-
-        .subtitle {
-            font-size: 1.3rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
-            animation: slideInUp 1s ease-out 0.2s both;
-        }
-
-        @keyframes slideInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        /* Stats Section */
-        .stats {
-            background: #f8f9fa;
-            padding: 60px 0;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            text-align: center;
-        }
-
-        .stat-item {
-            background: white;
-            padding: 40px 20px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .stat-item:hover {
-            transform: translateY(-10px);
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 800;
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-
-        .stat-label {
-            color: #666;
-            font-weight: 500;
-        }
-
-        /* Product Section */
-        .product-section {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .product-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .product-images {
-            position: relative;
-        }
-
-        .main-image {
-            width: 100%;
-            border-radius: 20px;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-            transition: transform 0.3s ease;
-        }
-
-        .main-image:hover {
-            transform: scale(1.05);
-        }
-
-        .thumbnail-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .thumbnail {
-            width: 100%;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
-        }
-
-        .thumbnail:hover, .thumbnail.active {
-            border-color: #667eea;
-            transform: scale(1.1);
-        }
-
-        .product-info h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        .product-description {
-            font-size: 1.1rem;
-            color: #666;
-            margin-bottom: 30px;
-            line-height: 1.8;
-        }
-
-        .features-list {
-            list-style: none;
-            margin-bottom: 30px;
-        }
-
-        .features-list li {
-            padding: 10px 0;
-            display: flex;
-            align-items: center;
-            color: #555;
-        }
-
-        .features-list li i {
-            color: #667eea;
-            margin-right: 15px;
-            font-size: 1.2rem;
-        }
-
-        /* Price Banner */
-        .price-banner {
-            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
             color: white;
             padding: 60px 0;
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
-
-        .price-banner::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
-            animation: shine 3s infinite;
-        }
-
-        @keyframes shine {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-        }
-
-        .price-content {
-            position: relative;
-            z-index: 2;
-        }
-
-        .price-old {
-            font-size: 1.5rem;
-            text-decoration: line-through;
-            opacity: 0.8;
-            margin-bottom: 10px;
-        }
-
-        .price-new {
-            font-size: 4rem;
-            font-weight: 800;
+        
+        .hero h1 {
+            font-size: 2.5rem;
             margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeIn 1s ease;
         }
-
-        .savings {
-            font-size: 1.3rem;
-            background: rgba(255,255,255,0.2);
-            padding: 10px 20px;
-            border-radius: 50px;
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            animation: fadeIn 1.2s ease;
+        }
+        
+        .price-container {
+            background-color: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
             display: inline-block;
             margin-bottom: 30px;
+            animation: fadeIn 1.4s ease;
         }
-
-        /* Countdown Timer */
-        .countdown-section {
-            background: #2c3e50;
+        
+        .current-price {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        
+        .original-price {
+            text-decoration: line-through;
+            opacity: 0.7;
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+        
+        .discount-badge {
+            background-color: var(--danger);
             color: white;
-            padding: 60px 0;
-            text-align: center;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
         }
-
-        .countdown-timer {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
+        
+        .cta-button {
+            background-color: var(--accent);
+            color: var(--dark);
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            animation: fadeIn 1.6s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #f4a261;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .hero-image {
+            max-width: 100%;
+            height: auto;
             margin-top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            animation: float 3s ease-in-out infinite;
         }
-
-        .time-unit {
-            background: rgba(255,255,255,0.1);
-            padding: 20px;
-            border-radius: 15px;
-            min-width: 100px;
-            backdrop-filter: blur(10px);
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
         }
-
-        .time-value {
-            font-size: 2.5rem;
-            font-weight: 800;
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: green sage;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2rem;
+            color: black;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
             display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            margin: 15px auto 0;
         }
-
-        .time-label {
-            font-size: 0.9rem;
-            opacity: 0.8;
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
-
+        
+        .feature-card {
+            background-color: black;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border-bottom: 4px solid transparent;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-bottom-color: var(--primary);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+        
+        /* Problem Solution Section */
+        .problem-solution {
+            padding: 80px 0;
+            background-color: #black;
+        }
+        
+        .ps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .ps-image {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .ps-content h2 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .problem-item, .solution-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .problem-item i, .solution-item i {
+            margin-right: 15px;
+            color: var(--danger);
+            font-size: 1.2rem;
+            margin-top: 3px;
+        }
+        
+        .solution-item i {
+            color: var(--primary);
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            aspect-ratio: 1/1;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-item:after {
+            content: '\f00e';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .gallery-item:hover:after {
+            opacity: 1;
+        }
+        
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        
+        .modal-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+        
         /* Testimonials */
         .testimonials {
             padding: 80px 0;
-            background: #f8f9fa;
+            background-color: var(--light);
         }
-
-        .testimonials h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 60px;
-            color: #333;
-        }
-
+        
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
-
-        .testimonial {
-            background: white;
+        
+        .testimonial-card {
+            background-color: black;    
+            border-radius: 10px;
             padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
         }
-
-        .testimonial:hover {
-            transform: translateY(-5px);
+        
+        .testimonial-card:before {
+            content: '\201C';
+            font-family: Georgia, serif;
+            font-size: 4rem;
+            color: var(--primary);
+            opacity: 0.2;
+            position: absolute;
+            top: 10px;
+            left: 10px;
         }
-
-        .stars {
-            color: #f39c12;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-        }
-
-        .testimonial-text {
+        
+        .testimonial-content {
+            margin-bottom: 20px;
             font-style: italic;
-            margin-bottom: 15px;
-            color: #555;
+            position: relative;
+            z-index: 1;
         }
-
+        
         .testimonial-author {
-            font-weight: 600;
-            color: #333;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
-            color: white;
-            padding: 20px 50px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.3rem;
-            font-weight: 700;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
-
-        /* How to Use */
-        .how-to-use {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .how-to-use h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 60px;
-            color: #333;
-        }
-
-        .steps-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .step {
-            text-align: center;
-            padding: 30px;
-        }
-
-        .step-number {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            border-radius: 50%;
             display: flex;
             align-items: center;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: white;
+            display: flex;
             justify-content: center;
-            font-size: 2rem;
-            font-weight: 800;
-            margin: 0 auto 20px;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 15px;
         }
-
-        .step h3 {
-            margin-bottom: 15px;
-            color: #333;
+        
+        .author-info h4 {
+            margin-bottom: 5px;
+            color: var(--secondary);
         }
-
-        .step p {
+        
+        .author-info p {
             color: #666;
+            font-size: 0.9rem;
         }
-
-        /* Mobile Responsive */
+        
+        .rating {
+            color: var(--accent);
+            margin-top: 5px;
+        }
+        
+        /* Urgency Section */
+        .urgency {
+            padding: 60px 0;
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+        }
+        
+        .urgency-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .urgency h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        
+        .urgency p {
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+        }
+        
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .countdown-item {
+            background-color: rgba(255,255,255,0.2);
+            padding: 15px 20px;
+            border-radius: 5px;
+            min-width: 80px;
+        }
+        
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .countdown-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+        
+        .stock-counter {
+            display: inline-block;
+            background-color: var(--danger);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            animation: pulse 2s infinite;
+        }
+        
+        .view-counter {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 20px;
+        }
+        
+        /* Order Section */
+        .order {
+            padding: 80px 0;
+            background-color: green sage;
+        }
+        
+        .order-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .order-container h2 {
+            color: var(--secondary);
+            margin-bottom: 30px;
+        }
+        
+        .bonuses {
+            background-color: var(--secondary);
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        .bonuses h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        .bonus-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .bonus-item i {
+            color: var(--primary);
+            margin-right: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .guarantee-badge {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--dark);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: block;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        .copyright {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
         @media (max-width: 768px) {
-            .main-title {
-                font-size: 2.5rem;
+            .hero h1 {
+                font-size: 2rem;
             }
-
-            .product-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
+            
+            .hero p {
+                font-size: 1rem;
             }
-
-            .countdown-timer {
+            
+            .current-price {
+                font-size: 1.8rem;
+            }
+            
+            .original-price {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .countdown {
                 flex-wrap: wrap;
-                gap: 15px;
             }
-
-            .time-unit {
-                min-width: 80px;
-                padding: 15px;
+            
+            .countdown-item {
+                min-width: 70px;
+                padding: 10px 15px;
             }
-
-            .time-value {
-                font-size: 2rem;
-            }
-
-            .price-new {
-                font-size: 3rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
+            
+            .countdown-number {
+                font-size: 1.5rem;
             }
         }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 15px;
-            }
-
-            .main-title {
-                font-size: 2rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .testimonials-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .steps-grid {
-                grid-template-columns: 1fr;
-            }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
-        /* Floating Elements */
-        .floating-element {
-            position: absolute;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .floating-element:nth-child(1) {
-            top: 10%;
-            left: 10%;
-            animation-delay: 0s;
-        }
-
-        .floating-element:nth-child(2) {
-            top: 20%;
-            right: 10%;
-            animation-delay: 2s;
-        }
-
-        .floating-element:nth-child(3) {
-            bottom: 30%;
-            left: 5%;
-            animation-delay: 4s;
+        
+        /* Order Form */
+        .order-form-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <section class="header">
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">Flashsale.<span>healty</span></a>
+            <div class="sale-tag">FLASH SALE!</div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <div class="header-content">
-                <div class="badge">
-                    <i class="fas fa-fire"></i> PROMO TERBATAS
+            <h1>ALAT PENGHANCUR OBAT 4IN1 - Praktis & Multifungsi</h1>
+            <p>Solusi cerdas untuk memotong, menghancurkan, menyimpan, dan membawa obat dengan mudah. Desain portabel yang cocok untuk di rumah maupun traveling.</p>
+        <img src="https://i5.walmartimages.com/asr/4b3b596f-939b-4294-8e6b-6df8c206443e.c27a5511fe784c19be08727eef0d109e.jpeg" alt="Alat Penghancur Obat 4in1" class="hero-image">
+        </div>
+            
+            <div class="price-container">
+                <div>
+                    <span class="current-price">Rp178.910</span>
+                    <span class="original-price">Rp266.500</span>
                 </div>
-                <h1 class="main-title">Spesial Bundle Beli 1 Gratis 1</h1>
-                <p class="subtitle">Hijab Segi Empat Polycotton Premium 110x110cm - Kualitas Terbaik untuk Muslimah Modern</p>
+                <div class="discount-badge">Hemat 33%</div>
+            </div>
+            
+            <a href="#order" class="cta-button">PESAN SEKARANG</a>
+            
+            <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Fitur Unggulan Alat Penghancur Obat 4in1</h2>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Pemotong Tablet</h3>
+                    <p>Memotong obat menjadi bagian yang lebih kecil dengan presisi untuk dosis yang akurat.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Penghancur Obat</h3>
+                    <p>Menghaluskan tablet menjadi bubuk halus untuk memudahkan konsumsi oleh anak-anak atau lansia.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Tempat Penyimpanan</h3>
+                    <p>Kompartemen penyimpanan yang praktis untuk membawa obat saat bepergian.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Pengukur Bubuk</h3>
+                    <p>Memudahkan pengukuran dosis bubuk obat yang telah dihancurkan.</p>
+                </div>
             </div>
         </div>
     </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
+    
+    <!-- Problem Solution Section -->
+    <section class="problem-solution">
         <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <div class="stat-number" id="viewers">1,247</div>
-                    <div class="stat-label">Sedang Melihat</div>
+            <div class="ps-container">
+                <div>
+                    <img src="https://m.media-amazon.com/images/I/51Ev-1XGnzL._AC_SL1005_.jpg" alt="Masalah Minum Obat" class="ps-image">
                 </div>
-                <div class="stat-item">
-                    <div class="stat-number" id="stock">47</div>
-                    <div class="stat-label">Stok Tersisa</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">4.9</div>
-                    <div class="stat-label">Rating Bintang</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">2,834</div>
-                    <div class="stat-label">Terjual</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Section -->
-    <section class="product-section">
-        <div class="container">
-            <div class="product-grid">
-                <div class="product-images">
-                    <img src="https://cdn.orderonline.id/uploads/images_7683611748789446554.png" alt="Hijab Polycotton Bundle" class="main-image" id="mainImage">
-                    <div class="thumbnail-grid">
-                        <img src="https://cdn.orderonline.id/uploads/images_7683611748789446554.png" alt="Thumbnail 1" class="thumbnail active" onclick="changeImage(this.src)">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbk2-m70i0j5myur87c.webp" alt="Thumbnail 2" class="thumbnail" onclick="changeImage(this.src)">
-                        <img src="https://down-id.img.susercontent.com/file/id-11134207-7rbkd-m70i0j5mxg6sca.webp" alt="Thumbnail 3" class="thumbnail" onclick="changeImage(this.src)">
+                <div class="ps-content">
+                    <h2>Masalah yang Sering Dihadapi Saat Minum Obat</h2>
+                    
+                    <div class="problem-item">
+                        <i class="fas fa-times-circle"></i>
+                        <div>
+                            <h3>Tablet Terlalu Besar</h3>
+                            <p>Sulit ditelan terutama untuk anak-anak dan lansia, berisiko tersedak.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <i class="fas fa-times-circle"></i>
+                        <div>
+                            <h3>Dosis Tidak Akurat</h3>
+                            <p>Memotong obat manual seringkali tidak presisi sehingga dosis tidak tepat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="problem-item">
+                        <i class="fas fa-times-circle"></i>
+                        <div>
+                            <h3>Tidak Praktis Saat Bepergian</h3>
+                            <p>Sulit membawa obat dalam jumlah banyak saat traveling.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="product-info">
-                    <h2>Hijab Polycotton Premium Bundle</h2>
-                    <p class="product-description">
-                        Dapatkan 2 pcs hijab segi empat polycotton premium dengan kualitas terbaik! Bahan yang lembut, tidak mudah kusut, dan nyaman digunakan sepanjang hari. Cocok untuk berbagai acara formal maupun casual.
-                    </p>
-                    <ul class="features-list">
-                        <li><i class="fas fa-check-circle"></i> Bahan Polycotton Premium (110x110cm)</li>
-                        <li><i class="fas fa-check-circle"></i> Tidak Mudah Kusut & Licin</li>
-                        <li><i class="fas fa-check-circle"></i> Beli 1 Gratis 1 (Total 2 Pcs)</li>
-                        <li><i class="fas fa-check-circle"></i> Tersedia Berbagai Warna Cantik</li>
-                        <li><i class="fas fa-check-circle"></i> Cocok untuk Segala Acara</li>
-                        <li><i class="fas fa-check-circle"></i> Mudah Dirawat & Tahan Lama</li>
-                    </ul>
+            </div>
+            
+            <div class="ps-container" style="margin-top: 50px;">
+                <div class="ps-content">
+                    <h2>Solusi dengan Alat Penghancur Obat 4in1</h2>
+                    
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h3>Memotong dengan Presisi</h3>
+                            <p>Pisau tajam memotong tablet menjadi bagian yang sama besar untuk dosis akurat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h3>Menghaluskan dengan Mudah</h3>
+                            <p>Obat dihancurkan menjadi bubuk halus yang mudah dicampur dengan makanan.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="solution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h3>Portabel & Multifungsi</h3>
+                            <p>Desain compact dengan tempat penyimpanan membuatnya praktis dibawa kemana saja.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://i5.walmartimages.com/seo/FACEGA-Pill-Cutter-Medicine-Crusher-Grinder-Splitter-Multifunction-4-1-Portable-Round-Tablet-Pulverizer-Splitter-Powder-Organizer-Daily-Travel-Case_a03f0466-e7bc-4edd-ada6-ddc0bc32dcb0.22d5f8cd9f3b113850cf2e86ea131515.jpeg" alt="Solusi Alat Penghancur Obat" class="ps-image">
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Price Banner -->
-    <section class="price-banner">
+    
+    <!-- Gallery Section -->
+    <section class="gallery">
         <div class="container">
-            <div class="price-content">
-                <div class="price-old">Harga Normal: Rp 223.498</div>
-                <div class="price-new">Rp 149.999</div>
-                <div class="savings">Hemat 33% - Beli 1 Gratis 1!</div>
-                <p style="font-size: 1.2rem; margin-bottom: 30px;">
-                    <i class="fas fa-shipping-fast"></i> GRATIS ONGKIR Se-Indonesia
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Countdown Timer -->
-    <section class="countdown-section">
-        <div class="container">
-            <h2 style="margin-bottom: 20px;">Promo Berakhir Dalam:</h2>
-            <p style="font-size: 1.2rem; margin-bottom: 30px;">Jangan sampai kehabisan! Stok terbatas untuk promo ini.</p>
-            <div class="countdown-timer">
-                <div class="time-unit">
-                    <span class="time-value" id="hours">07</span>
-                    <span class="time-label">Jam</span>
+            <h2 class="section-title">Galeri Produk</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://cdn.orderonline.id/uploads/images_8488221727609605440.gif" alt="Alat Penghancur Obat 1">
                 </div>
-                <div class="time-unit">
-                    <span class="time-value" id="minutes">23</span>
-                    <span class="time-label">Menit</span>
+                <div class="gallery-item">
+                    <img src="https://i5.walmartimages.com/asr/caf5c5b3-cb37-475b-8027-8ab7ff6bcde7.400187326f11f0484387d98003c302a4.jpeg" alt="Alat Penghancur Obat 2">
                 </div>
-                <div class="time-unit">
-                    <span class="time-value" id="seconds">45</span>
-                    <span class="time-label">Detik</span>
+                <div class="gallery-item">
+                    <img src="https://m.media-amazon.com/images/I/51ixiWOHoQL._AC_SL1000_.jpg" alt="Alat Penghancur Obat 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://m.media-amazon.com/images/I/51Z+jnPmu3L._AC_SL1000_.jpg" alt="Alat Penghancur Obat 4">
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- How to Use -->
-    <section class="how-to-use">
-        <div class="container">
-            <h2>Cara Penggunaan yang Mudah</h2>
-            <div class="steps-grid">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Pilih Gaya</h3>
-                    <p>Tentukan gaya hijab yang ingin Anda buat sesuai dengan outfit dan acara</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Lipat & Bentuk</h3>
-                    <p>Lipat hijab sesuai bentuk wajah Anda untuk hasil yang maksimal dan nyaman</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Sematkan</h3>
-                    <p>Gunakan jarum pentul atau peniti untuk menyematkan hijab dengan rapi</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Siap Digunakan</h3>
-                    <p>Hijab siap digunakan sepanjang hari dengan kenyamanan maksimal</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Testimonials -->
     <section class="testimonials">
         <div class="container">
-            <h2>Apa Kata Mereka?</h2>
+            <h2 class="section-title">Apa Kata Pelanggan Kami?</h2>
+            
             <div class="testimonials-grid">
-                <div class="testimonial">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Alat ini sangat membantu ibu saya yang sulit menelan obat besar. Sekarang obat bisa dihancurkan dengan mudah dan dicampur dengan makanan."
                     </div>
-                    <p class="testimonial-text">"Hijabnya bagus banget! Bahannya lembut dan tidak mudah kusut. Dapat 2 pcs dengan harga segini worth it banget!"</p>
-                    <p class="testimonial-author">- Sari, Jakarta</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RS</div>
+                        <div class="author-info">
+                            <h4>Rina S.</h4>
+                            <p>Anak dari pasien lansia</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Sebagai perawat, alat ini sangat memudahkan pekerjaan saya dalam memberikan obat kepada pasien yang kesulitan menelan."
                     </div>
-                    <p class="testimonial-text">"Kualitas premium dengan harga terjangkau. Cocok untuk ke kantor dan acara formal. Sudah order berkali-kali!"</p>
-                    <p class="testimonial-author">- Rina, Bandung</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DW</div>
+                        <div class="author-info">
+                            <h4>Dewi W.</h4>
+                            <p>Perawat Rumah Sakit</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Saya sering traveling dan alat ini sangat praktis untuk membawa obat-obatan. Desainnya compact tapi bisa menyimpan banyak obat."
                     </div>
-                    <p class="testimonial-text">"Pengiriman cepat, packaging rapi. Hijabnya sesuai ekspektasi, bahan polycotton memang beda dari yang biasa!"</p>
-                    <p class="testimonial-author">- Maya, Surabaya</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AP</div>
+                        <div class="author-info">
+                            <h4>Andi P.</h4>
+                            <p>Sales Executive</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="testimonial">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Anak saya yang masih kecil tidak mau minum obat karena pahit. Dengan alat ini, obat bisa dihancurkan dan dicampur madu jadi lebih mudah diminum."
                     </div>
-                    <p class="testimonial-text">"Terima kasih! Hijabnya cantik dan nyaman dipakai. Warnanya juga sesuai dengan foto. Highly recommended!"</p>
-                    <p class="testimonial-author">- Dewi, Yogyakarta</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LM</div>
+                        <div class="author-info">
+                            <h4>Lia M.</h4>
+                            <p>Ibu Rumah Tangga</p>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Jangan Sampai Kehabisan!</h2>
-            <p style="font-size: 1.3rem; margin-bottom: 40px;">Promo terbatas hanya untuk 100 pembeli pertama hari ini!</p>
-            <a href="https://nava.orderonline.id/checkout-polycotton-rectangle-hijab" class="cta-button" target="_blank">
-                <i class="fas fa-shopping-cart"></i> AMBIL PROMO SEKARANG JUGA
-            </a>
-            <p style="margin-top: 30px; font-size: 1.1rem;">
-                <i class="fas fa-shield-alt"></i> Garansi 100% Uang Kembali Jika Tidak Puas
-            </p>
+    
+    <!-- Urgency Section -->
+    <section class="urgency">
+        <div class="container urgency-container">
+            <h2>PROMO TERBATAS!</h2>
+            <p>Dapatkan Alat Penghancur Obat 4in1 dengan harga spesial hanya untuk hari ini!</p>
+            
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">12</span>
+                    <span class="countdown-label">Jam</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">45</span>
+                    <span class="countdown-label">Menit</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">30</span>
+                    <span class="countdown-label">Detik</span>
+                </div>
+            </div>
+            
+            <div class="stock-counter">Sisa Stok: <span id="stock">27</span> pcs</div>
+            
+            <a href="#order" class="cta-button">PESAN SEKARANG SEBELUM KEHABISAN</a>
+            
+            <div class="view-counter"><i class="fas fa-eye"></i> <span id="viewers">1285</span> orang sedang melihat produk ini</div>
         </div>
     </section>
-
+    
+    <!-- Order Section -->
+    <section class="order" id="order">
+        <div class="container order-container">
+            <h2 class="section-title">Dapatkan Alat Penghancur Obat 4in1 Sekarang!</h2>
+            
+            <div class="bonuses">
+                <h3>BONUS SPESIAL UNTUK PEMBELI HARI INI:</h3>
+                
+                <div class="bonus-item">
+                    <i class="fas fa-gift"></i>
+                    <div>
+                        <h4>E-Book Panduan Penggunaan Obat yang Benar</h4>
+                        <p>Senilai Rp50.000 - GRATIS untuk Anda</p>
+                    </div>
+                </div>
+                
+                <div class="bonus-item">
+                    <i class="fas fa-gift"></i>
+                    <div>
+                        <h4>Video Tutorial Perawatan Alat</h4>
+                        <p>Agar alat tetap awet dan higienis</p>
+                    </div>
+                </div>
+                
+                <div class="bonus-item">
+                    <i class="fas fa-gift"></i>
+                    <div>
+                        <h4>Gratis Ongkir ke Seluruh Indonesia</h4>
+                        <p>Khusus pembelian hari ini</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="guarantee-badge">
+                <i class="fas fa-shield-alt"></i> GARANSI 100% UANG KEMBALI JIKA TIDAK PUAS
+            </div>
+            
+            <div class="price-container" style="margin: 20px 0;">
+                <div>
+                    <span class="current-price">Rp178.910</span>
+                    <span class="original-price">Rp266.500</span>
+                </div>
+                <div class="discount-badge">Hemat 33%</div>
+            </div>
+            
+            <div class="order-form-container">
+                <!-- OrderOnline Embed Code - v8.0.4 -->
+                <div class="ooef">
+                    <form class="orderonline-embed-form" data-username="nava" data-product-slug="checkout-alat-penghancur-obat-4in1" data-product-id="6867ac22417ea58df400e965" id="oo-embed-form-checkout-alat-penghancur-obat-4in1-701" data-origin="orderonline">
+                        <div class="ooef-loader">
+                            <style>
+                                .ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}
+                                @keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                @-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}
+                                .ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}
+                                .ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}
+                                .ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}
+                                @-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                                @keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}
+                            </style>
+                            <div aria-live="polite" role="status">
+                                <div>Loading...</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    if (typeof xLogError != 'function') {
+                        var xLogError = function (error) {
+                            var req = new XMLHttpRequest();
+                            var payload = JSON.stringify({
+                                url: document.location.href,
+                                line: error.line,
+                                stack: error.stack
+                            });
+                            var params = 'message=' + encodeURIComponent(error.name) + '&payload=' + encodeURIComponent(payload) + '&type=embed&level=error';
+                            req.open('POST', 'https://api.orderonline.id/log', true);
+                            req.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                            req.send(params);
+                        };
+                    }
+                    try {
+                        if (typeof xEmbedScript != 'function') {
+                            var xEmbedScript = function () {
+                                !function(w, d, e, v, id, t, s) {
+                                    if (d.getElementById(id)) return;
+                                    t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                    s = d.getElementsByTagName(e)[0];
+                                    s.parentNode.insertBefore(t, s);
+                                }(window, document, 'script', 'https://cdn.orderonline.id/js/embed-v2-slim.min.js?v=8.0.4', 'oo-embed-js');
+                            };
+                        }
+                        if (typeof xEmbedInit != 'function') {
+                            var xEmbedInit = function (w, n) {
+                                if (w.ooe) return;
+                                n = w.ooe = function() {
+                                    n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                                };
+                                if (!w._ooe) w._ooe = n;
+                                n.push = n;n.loaded = !0;n.version = '8.0.4';n.queue = [];
+                            };
+                        }
+                        xEmbedInit(window);
+                        ooe('setup', 'redirect', 'https://nava.orderonline.id');
+                        ooe('init', '5f119cd08dcbdb2737678706', '6867ac22417ea58df400e965', null, 'oo-embed-form-checkout-alat-penghancur-obat-4in1-701', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+                        if (!window.jQuery) {
+                            !function(w, d, e, v, id, t, s) {
+                                if (d.getElementById(id)) return;
+                                t = d.createElement(e);t.async = !0;t.src = v;t.id = id;
+                                t.addEventListener('load', xEmbedScript);
+                                s = d.getElementsByTagName(e)[0];
+                                s.parentNode.insertBefore(t, s);
+                            }(window, document, 'script', 'https://cdn.orderonline.id/js/vendor/jquery.min.js', 'oo-embed-jquery');
+                        } else {
+                            xEmbedScript();
+                        }
+                    } catch (e) {
+                        xLogError(e);
+                        throw e;
+                    }
+                </script>
+                <!-- End OrderOnline Embed Code -->
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <a href="#" class="footer-logo">Flashsale.<span>healty</span></a>
+            
+            <div class="footer-links">
+                <a href="#">Tentang Kami</a>
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
+                <a href="#">Kontak</a>
+            </div>
+            
+            <p class="copyright">© 2023 Flashsale.healty. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- Image Modal -->
+    <div class="modal" id="imageModal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+        </div>
+    </div>
+    
     <script>
-        // Image Gallery
-        function changeImage(src) {
-            document.getElementById('mainImage').src = src;
-            
-            // Update active thumbnail
-            document.querySelectorAll('.thumbnail').forEach(thumb => {
-                thumb.classList.remove('active');
-            });
-            event.target.classList.add('active');
-        }
-
-        // Dynamic Counters
-        function updateCounters() {
-            const viewers = document.getElementById('viewers');
-            const stock = document.getElementById('stock');
-            
-            // Simulate dynamic viewers (1000-1500)
-            const currentViewers = Math.floor(Math.random() * 500) + 1000;
-            viewers.textContent = currentViewers.toLocaleString();
-            
-            // Simulate decreasing stock (30-50)
-            const currentStock = Math.floor(Math.random() * 20) + 30;
-            stock.textContent = currentStock;
-        }
-
         // Countdown Timer
         function updateCountdown() {
-            const now = new Date().getTime();
-            const tomorrow = new Date();
-            tomorrow.setDate(tomorrow.getDate() + 1);
-            tomorrow.setHours(0, 0, 0, 0);
-            const distance = tomorrow - now;
-
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+            const now = new Date();
+            const midnight = new Date();
+            midnight.setHours(24, 0, 0, 0);
+            
+            const diff = midnight - now;
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
             document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
             document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
             document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
         }
-
-        // Smooth Scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Initialize functions
-        updateCounters();
-        updateCountdown();
-
-        // Update every few seconds
-        setInterval(updateCounters, 8000);
+        
         setInterval(updateCountdown, 1000);
-
-        // Add scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe all sections for scroll animations
-        document.querySelectorAll('section').forEach(section => {
-            section.style.opacity = '0';
-            section.style.transform = 'translateY(20px)';
-            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(section);
-        });
-
-        // Add some interactive elements
-        document.querySelectorAll('.stat-item, .testimonial, .step').forEach(item => {
-            item.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-5px) scale(1.02)';
-            });
+        updateCountdown();
+        
+        // Dynamic Stock
+        function updateStock() {
+            const stockElement = document.getElementById('stock');
+            let stock = parseInt(stockElement.textContent);
             
-            item.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
+            // Random decrease to simulate purchases
+            if (Math.random() > 0.7 && stock > 0) {
+                stock -= 1;
+                stockElement.textContent = stock;
+                
+                if (stock < 10) {
+                    stockElement.parentElement.style.animationDuration = '1s';
+                }
+            }
+        }
+        
+        setInterval(updateStock, 30000);
+        
+        // Dynamic Viewers
+        function updateViewers() {
+            const viewersElement = document.getElementById('viewers');
+            let viewers = parseInt(viewersElement.textContent.replace(',', ''));
+            
+            // Random increase to simulate new viewers
+            viewers += Math.floor(Math.random() * 5);
+            viewersElement.textContent = viewers.toLocaleString();
+        }
+        
+        setInterval(updateViewers, 5000);
+        
+        // Image Gallery Modal
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const closeModal = document.querySelector('.close-modal');
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const imgSrc = this.querySelector('img').src;
+                modalImg.src = imgSrc;
+                modal.style.display = 'flex';
+            });
+        });
+        
+        closeModal.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+        
+        window.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
     </script>
